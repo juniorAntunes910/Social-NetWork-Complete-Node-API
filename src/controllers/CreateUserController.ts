@@ -14,8 +14,8 @@ class CreateUserController{
         });
 
         try{
-            const { name, email, password} = userSchema.parse(req.body);
-            const user = createUserService.execute({
+            const { name, email, password} = await userSchema.parse(req.body);
+            const user = await createUserService.execute({
                 name,
                 email,
                 password
