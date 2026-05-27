@@ -1,0 +1,16 @@
+"filename", "language", "TypeScript", "comment", "blank", "total"
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/controllers/profile/CreateProfileController.ts", "TypeScript", 17, 0, 1, 18
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/controllers/profile/ReadProfileController.ts", "TypeScript", 17, 0, 2, 19
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/controllers/profile/UpdateProfileController.ts", "TypeScript", 18, 0, 2, 20
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/controllers/users/CreateUserController.ts", "TypeScript", 28, 0, 5, 33
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/controllers/users/DeleteUserController.ts", "TypeScript", 17, 0, 1, 18
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/controllers/users/ReadUserController.ts", "TypeScript", 16, 0, 1, 17
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/controllers/users/UpdateUserController.ts", "TypeScript", 18, 0, 2, 20
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/services/profiles/CreateProfileService.ts", "TypeScript", 23, 0, 3, 26
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/services/profiles/ReadProfileService.ts", "TypeScript", 14, 0, 3, 17
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/services/profiles/UpdateProfileService.ts", "TypeScript", 26, 0, 4, 30
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/services/users/CreateUserService.ts", "TypeScript", 27, 0, 5, 32
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/services/users/DeleteUserService.ts", "TypeScript", 19, 0, 3, 22
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/services/users/ReadUserService.ts", "TypeScript", 14, 0, 1, 15
+"/home/junior/Área de trabalho/Social-NetWork-Complete-Node-API/src/services/users/UpdateUserService.ts", "TypeScript", 31, 0, 4, 35
+"Total", "-", 285, 0, 37, 322

@@ -6,6 +6,10 @@ import { updateUserController } from "./src/controllers/users/UpdateUserControll
 import { deleteUserController } from "./src/controllers/users/DeleteUserController";
 //profile
 import { createProfileController } from "./src/controllers/profile/CreateProfileController";
+import { readProfileCOntroller } from "./src/controllers/profile/ReadProfileController";
+import { updateProfileController } from "./src/controllers/profile/UpdateProfileController";
+import { deleteProfileController } from "./src/controllers/profile/DeleteProfileController";
+
 const router = express.Router();
 
 
@@ -18,5 +22,8 @@ router.delete('/users/:id', (req,res) => deleteUserController.handle(req, res));
 
 //profile
 router.post('/profiles', (req, res) => createProfileController.handle(req, res) );
+router.get('/profiles', (req, res) => readProfileCOntroller.handle(req,res));
+router.put('/profiles/:id', (req, res) => updateProfileController.handle(req, res));
+router.delete('/profiles/:id', (req, res) => deleteProfileController.handle(req, res));
 
 export { router }
