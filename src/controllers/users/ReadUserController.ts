@@ -1,4 +1,4 @@
-import { readUserService } from "../services/ReadUserService";
+import { readUserService } from "../../services/users/ReadUserService";
 import { Request, Response } from "express";
 class ReadUSerController{
     async handle(req: Request, res: Response){

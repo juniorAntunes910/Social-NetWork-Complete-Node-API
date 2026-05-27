@@ -1,5 +1,5 @@
 import { Response, Request } from "express";
-import { updateUserService } from "../services/UpdateUserService";
+import { updateUserService } from "../../services/users/UpdateUserService";
 
 class UpdateUserController{
 

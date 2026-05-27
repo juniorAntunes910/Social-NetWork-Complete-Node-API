@@ -1,5 +1,5 @@
 import { request } from "node:http";
-import { createUserService } from "../services/CreateUserService";
+import { createUserService } from "../../services/users/CreateUserService";
 import { z } from "zod";
 import { Request, Response } from "express";
 
