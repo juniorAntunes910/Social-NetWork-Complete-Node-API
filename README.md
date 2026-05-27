@@ -17,7 +17,7 @@ datasource db {
 }
 
 model User {
-  id       Int      @id @default(autoincrement())
+  id       String     @id @default(uuid())
   name     String
   email    String   @unique
   password String
@@ -27,7 +27,7 @@ model User {
 }
 
 model Profile {
-  id     Int  @id @default(autoincrement())
+  id       String     @id @default(uuid())
   bio    String
   user   User @relation(fields: [userId], references: [id])
   userId Int  @unique // garante relação 1:1
@@ -45,13 +45,13 @@ model Post {
 }
 
 model Category {
-  id    Int    @id @default(autoincrement())
+  id       String     @id @default(uuid())
   name  String @unique
   posts Post[] // N:N (implícito)
 }
 
 model Comment {
-  id       Int    @id @default(autoincrement())
+  id       String     @id @default(uuid())
   text     String
   post     Post   @relation(fields: [postId], references: [id])
   postId   Int
