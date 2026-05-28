@@ -9,6 +9,11 @@ import { createProfileController } from "./src/controllers/profile/CreateProfile
 import { readProfileCOntroller } from "./src/controllers/profile/ReadProfileController";
 import { updateProfileController } from "./src/controllers/profile/UpdateProfileController";
 import { deleteProfileController } from "./src/controllers/profile/DeleteProfileController";
+//Post
+import { createPostController } from "./src/controllers/posts/CreatePostController";
+import { readPostController } from "./src/controllers/posts/ReadPostController";
+import { updatePostController } from "./src/controllers/posts/UpdatePostController";
+import { deletePostController } from "./src/controllers/posts/DeletePostService";
 
 const router = express.Router();
 
@@ -25,5 +30,12 @@ router.post('/profiles', (req, res) => createProfileController.handle(req, res) 
 router.get('/profiles', (req, res) => readProfileCOntroller.handle(req,res));
 router.put('/profiles/:id', (req, res) => updateProfileController.handle(req, res));
 router.delete('/profiles/:id', (req, res) => deleteProfileController.handle(req, res));
+
+
+//Post
+router.post('/posts', (req, res) => createPostController.handle(req, res));
+router.get('/posts', (req, res) => readPostController.handle(req,res));
+router.put('/posts/:id', (req, res) => updatePostController.handle(req,res));
+router.delete('/posts/:id', (req, res) => deletePostController.handle(req,res));
 
 export { router }
