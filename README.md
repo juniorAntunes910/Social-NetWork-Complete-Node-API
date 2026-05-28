@@ -44,11 +44,7 @@ model Post {
   comments   Comment[]
 }
 
-model Category {
-  id       String     @id @default(uuid())
-  name  String @unique
-  posts Post[] // N:N (implícito)
-}
+
 
 model Comment {
   id       String     @id @default(uuid())
