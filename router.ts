@@ -14,6 +14,10 @@ import { createPostController } from "./src/controllers/posts/CreatePostControll
 import { readPostController } from "./src/controllers/posts/ReadPostController";
 import { updatePostController } from "./src/controllers/posts/UpdatePostController";
 import { deletePostController } from "./src/controllers/posts/DeletePostService";
+//Comment 
+import { createCommentController } from "./src/controllers/comment/CreateCommentController";
+import { readCommentController } from "./src/controllers/comment/ReadCommentController";
+import { updateCommentController } from "./src/controllers/comment/UpdateCommentController";
 
 const router = express.Router();
 
@@ -38,5 +42,9 @@ router.get('/posts', (req, res) => readPostController.handle(req,res));
 router.put('/posts/:id', (req, res) => updatePostController.handle(req,res));
 router.delete('/posts/:id', (req, res) => deletePostController.handle(req,res));
 
+//Comment
+router.post('/comments', (req, res) => createCommentController.handle(req,res));
+router.get('/comments', (req, res) => readCommentController.handle(req, res));
+router.put('/comments/:id', (req, res) => updateCommentController.handle(req, res));
+
 export { router }
-//teste

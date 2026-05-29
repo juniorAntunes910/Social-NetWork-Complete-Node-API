@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { Request, Response } from "express"
 import { createProfileservice } from "../../services/profiles/CreateProfileService"
 
 class CreateProfileController{
