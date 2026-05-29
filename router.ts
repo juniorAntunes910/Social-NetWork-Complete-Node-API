@@ -39,3 +39,4 @@ router.put('/posts/:id', (req, res) => updatePostController.handle(req,res));
 router.delete('/posts/:id', (req, res) => deletePostController.handle(req,res));
 
 export { router }
+//teste
